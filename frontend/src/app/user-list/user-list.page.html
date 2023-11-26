@@ -21,6 +21,7 @@
         <!-- EDITAR USUARIO-->
 
         <ion-icon
+        color="warning"
           slot="end"
           name="create"
           [routerLink]="'/user-edit/'
@@ -29,14 +30,15 @@
         ></ion-icon>
 
         <!-- ELIMINAR USUARIO-->
-        <ion-icon (click)="confirmDelete(usuario.id)" slot="end" name="trash">
+        <ion-icon (click)="confirmDelete(usuario.id)"  color="danger" slot="end" name="trash">
+          
         </ion-icon>
       </ion-item>
     </ion-list>
   </ion-card>
 
   <!-- AGREGAR USUARIO-->
-  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+  <ion-fab style="padding-bottom: 100px;" slot="fixed" vertical="bottom" horizontal="end">
     <ion-fab-button [routerLink]="'/user-edit/0'">
       <ion-icon name="add"></ion-icon>
     </ion-fab-button>
